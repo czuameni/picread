@@ -1,4 +1,4 @@
-# 📸 PicRead — Screenshot to Text (OCR)
+# PicRead — Screenshot to Text (OCR)
 
 PicRead is a simple desktop application that extracts text from images (screenshots, photos) using OCR (Tesseract).
 
@@ -6,7 +6,7 @@ Built with Python + CustomTkinter, focused on clean UI and real usability.
 
 ---
 
-## 🚀 Features
+## Features
 
 * Upload image (PNG, JPG, JPEG)
 * Image preview inside app
@@ -24,7 +24,7 @@ Built with Python + CustomTkinter, focused on clean UI and real usability.
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### Main UI
 
@@ -40,7 +40,7 @@ Built with Python + CustomTkinter, focused on clean UI and real usability.
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 * Python
 * CustomTkinter
@@ -49,7 +49,7 @@ Built with Python + CustomTkinter, focused on clean UI and real usability.
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone repository
 
@@ -89,7 +89,7 @@ python main.py
 
 ---
 
-## 🌍 Language Support
+## Language Support
 
 Tesseract requires language files.
 
@@ -101,7 +101,7 @@ Make sure you have:
 
 ---
 
-## 📦 Build EXE
+## Build EXE
 
 pip install pyinstaller
 pyinstaller --onefile --windowed --icon=icon.ico main.py
@@ -112,7 +112,7 @@ dist/
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 PicRead/
 │
@@ -127,7 +127,7 @@ PicRead/
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 * Tesseract must be installed separately
 * OCR accuracy depends on image quality
@@ -135,7 +135,7 @@ PicRead/
 
 ---
 
-## 💡 Future Improvements
+## Future Improvements
 
 * Drag & Drop support
 * Batch OCR (multiple images)
