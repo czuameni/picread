@@ -5,11 +5,9 @@ import pytesseract
 import os
 import csv
 
-# SETUP
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
-# OPTIONAL: set path manually if needed
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 class PicReadApp(ctk.CTk):
@@ -27,7 +25,6 @@ class PicReadApp(ctk.CTk):
         self.create_ui()
 
     def create_ui(self):
-        # LEFT FRAME
         left_frame = ctk.CTkFrame(self, width=200)
         left_frame.pack(side="left", fill="y", padx=10, pady=10)
 
@@ -46,18 +43,15 @@ class PicReadApp(ctk.CTk):
         self.extract_btn = ctk.CTkButton(left_frame, text="Extract Text", command=self.extract_text)
         self.extract_btn.pack(pady=10)
 
-        # RIGHT FRAME (Preview)
         right_frame = ctk.CTkFrame(self)
         right_frame.pack(side="top", fill="both", expand=True, padx=10, pady=10)
 
         self.image_label = ctk.CTkLabel(right_frame, text="No image loaded")
         self.image_label.pack(expand=True)
 
-        # TEXTBOX
         self.textbox = ctk.CTkTextbox(self, height=150)
         self.textbox.pack(fill="both", padx=10, pady=10)
 
-        # BOTTOM BUTTONS
         bottom_frame = ctk.CTkFrame(self)
         bottom_frame.pack(fill="x", padx=10, pady=5)
 
@@ -70,7 +64,6 @@ class PicReadApp(ctk.CTk):
         self.save_csv_btn = ctk.CTkButton(bottom_frame, text="Save CSV", command=self.save_csv)
         self.save_csv_btn.pack(side="left", padx=5)
 
-        # STATUS BAR
         self.status = ctk.CTkLabel(self, text="Status: Ready", anchor="w")
         self.status.pack(fill="x", padx=10, pady=5)
 
@@ -94,7 +87,6 @@ class PicReadApp(ctk.CTk):
 
         self.image_path = file_path
 
-        # Resize preview
         image.thumbnail((400, 400))
         self.image_preview = ImageTk.PhotoImage(image)
 
